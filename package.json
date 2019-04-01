@@ -26,12 +26,12 @@
     "@types/dotenv": "^6.1.1",
     "dotenv": "^7.0.0",
     "jira-connector": "^2.10.0",
-    "tslint": "^5.14.0",
-    "typescript": "^3.4.1",
     "underscore": "^1.9.1"
   },
   "devDependencies": {
     "prettier": "^1.16.4",
+    "typescript": "^3.4.1",
+    "tslint": "^5.14.0",
     "tslint-config-spaceagent": "git+https://github.com/SpaceAgent-Inc/tslint-config-spaceagent"
   }
 }

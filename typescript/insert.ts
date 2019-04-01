@@ -20,27 +20,6 @@ export async function insert(title: string, description: string) {
   }
 
   console.log(`Start import: ${title} ${description}`);
-  const issue = {
-    fields: {
-      summary: title,
-      description: {
-        type: "doc",
-        version: 1,
-        content: [
-          {
-            type: "paragraph",
-            content: [
-              {
-                text: description,
-                type: "text"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  };
-
   const res = await jira.issue.createIssue({
     fields: {
       project: { id: process.env.JIRA_PROJECT_ID },
