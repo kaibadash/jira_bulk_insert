@@ -1,0 +1,37 @@
+{
+  "name": "jira_bulk_insert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "exec": "node build/insert.js",
+    "format": "tslint --fix 'typescript/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaibadash/jira_bulk_insert.git"
+  },
+  "keywords": [
+    "jira"
+  ],
+  "author": "kaiba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaibadash/jira_bulk_insert/issues"
+  },
+  "homepage": "https://github.com/kaibadash/jira_bulk_insert#readme",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "dotenv": "^7.0.0",
+    "jira-connector": "^2.10.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "typescript": "^3.4.1",
+    "tslint": "^5.14.0",
+    "tslint-config-spaceagent": "git+https://github.com/SpaceAgent-Inc/tslint-config-spaceagent"
+  }
+}
